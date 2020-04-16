@@ -15,8 +15,10 @@
   </div>
 </template>
 <script>
-import {Select} from 'antd'
+import 'ant-design-vue/dist/antd.css'
+import {Select} from 'ant-design-vue'
 export default {
+  components: {'a-select': Select},
   methods: {
     handleChange(value) {
       console.log(`selected ${value}`);
