@@ -2,8 +2,8 @@
   <div class="pageFullScreen" id="xxxFullScreen" >
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">客户端性能</span>
     <a-row :gutter="24">
-      <a-col :span="6">
-        <a-card   title="Card title" :bordered="false">
+      <a-col :span="6" @click = "goto()">
+        <a-card title="Card title" :bordered="false">
           <p>card content</p>
         </a-card>
       </a-col>
@@ -100,8 +100,15 @@
 <script>
 
 export default {
-  data () {
-    return {}
+    methods:{
+        goto(){
+        window.open('https://www.baidu.com',"_blank")      
+    }
+    }
+    ,
+
+    data () {
+        return {}
   }
 }
 </script>
