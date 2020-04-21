@@ -2,8 +2,7 @@
   <div class="pageFullScreen" id="xxxFullScreen" >
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">客户端性能</span>
     <Row :gutter="24">
-        <i-col :span="6">
-           
+        <i-col :span="6">          
             <Card class = "cardcl" @on-click="goto()">
                  <li class = "smalltitle">平均帧率（Fps）</li>
                 <div style="text-align:center">
@@ -160,6 +159,7 @@ export default {
     methods:{
         goto(){
         window.open('https://www.baidu.com',"_blank")      
+        console.log("asdasdasdasd")
     }
     }
     ,

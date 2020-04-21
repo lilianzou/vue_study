@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <Icon type="md-book" />  
-    <index></index>
+    <cardtest></cardtest>
   </div>
   
 </template>
 
 <script>
-import index from './components/index.vue'
-
+import cardtest from './components/cardtest.vue'
 
 export default {
   name: 'App',
   components: {
-    index
+    cardtest
   },
   data(){
     return{
