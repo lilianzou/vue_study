@@ -2,25 +2,22 @@
 
   <div id="app">
     <a-button></a-button>
+    <cardtest></cardtest>
     
-  
-    <selectvue></selectvue>
-    <checkbox></checkbox>
 
   </div>
   
 </template>
 
 <script>
-import selectvue from './components/selectvue.vue'
-import checkbox from './components/CheckBox.vue'
+import cardtest from './components/cardtest.vue'
 
 
 
 export default {
   name: 'App',
   components: {
-    selectvue,checkbox
+    cardtest
   },
   data(){
     return{

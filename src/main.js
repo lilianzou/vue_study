@@ -5,9 +5,8 @@ import 'ant-design-vue/dist/antd.css';
 import ViewUI from 'view-design';
 // import style
 import 'view-design/dist/styles/iview.css';
-
-Vue.use(ViewUI);
 Vue.config.productionTip = false;
+Vue.use(ViewUI);
 
 
 Vue.use(Antd);

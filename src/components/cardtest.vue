@@ -3,7 +3,7 @@
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">客户端性能</span>
     <Row :gutter="24">
         <i-col :span="6">          
-            <Card class = "cardcl" @on-click="goto()">
+            <Card class = "cardcl" @click.native="goto()">
                  <li class = "smalltitle">平均帧率（Fps）</li>
                 <div style="text-align:center">
                     <a-icon type="slack" />
@@ -12,7 +12,8 @@
             </Card>  
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()" >
+               <li class = "smalltitle">平均帧率（Fps）</li>
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -20,7 +21,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -28,7 +29,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -39,7 +40,7 @@
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">网络质量</span>
     <Row>
         <i-col :span="6">
-            <Card class = "cardcl">
+            <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -48,7 +49,7 @@
         
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -56,7 +57,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -64,7 +65,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -75,7 +76,7 @@
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">服务器性能</span>
     <Row>
         <i-col :span="6">
-            <Card class = "cardcl">
+            <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -84,7 +85,7 @@
         
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -92,7 +93,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -100,7 +101,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -111,7 +112,7 @@
     <a-icon type="up-circle"  class = "logo"/><span class = "iconfont">客户端崩溃</span>
     <Row>
         <i-col :span="6">
-            <Card class = "cardcl">
+            <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -120,7 +121,7 @@
         
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -128,7 +129,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -136,7 +137,7 @@
             </Card>
         </i-col>
         <i-col :span="6"> 
-           <Card class = "cardcl">
+           <Card class = "cardcl" @click.native="goto()">
                 <div style="text-align:center">
                     <a-icon type="slack" />
                          <h3>妈妈的文本在这里</h3>
@@ -189,7 +190,7 @@ export default {
 }
 .cardcl {
     font-family:STKaiti,serif ;
-    width: 320px;
+    width: 220px;
     background-color: orangered;
 }
 .smalltitle{
