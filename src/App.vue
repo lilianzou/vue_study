@@ -1,24 +1,19 @@
 <template>
   <div id="app">
-    
-  
-    <selectvue></selectvue>
-    <checkbox></checkbox>
-
+    <Icon type="md-book" />  
+    <index></index>
   </div>
   
 </template>
 
 <script>
-import selectvue from './components/selectvue.vue'
-import checkbox from './components/CheckBox.vue'
-
+import index from './components/index.vue'
 
 
 export default {
   name: 'App',
   components: {
-    selectvue,checkbox
+    index
   },
   data(){
     return{
