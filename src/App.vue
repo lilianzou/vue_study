@@ -14,15 +14,12 @@ export default {
     cardtest
   },
   data(){
-    return{
-      
+    return{ 
     }
   },
   methods:{
-    
-  
-  }
 
+  }
 }
 </script>
 
